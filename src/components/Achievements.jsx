@@ -126,7 +126,7 @@ const AchievementCard = (props) => {
       <div className="flex flex-row mb-2 font-poppins font-normal text-dimWhite">
         {props.article && (
           <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
+            className="inline-flex items-center mr-2 hover:text-cyan-200"
             href={props.article}
             target="_blank"
             rel="noopener noreferrer"
@@ -136,7 +136,7 @@ const AchievementCard = (props) => {
         )}
         {props.youtube && (
           <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
+            className="inline-flex items-center mr-2 hover:text-cyan-200"
             href={props.youtube}
             target="_blank"
             rel="noopener noreferrer"
@@ -146,7 +146,7 @@ const AchievementCard = (props) => {
         )}
         {props.github && (
           <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
+            className="inline-flex items-center mr-2 hover:text-cyan-200"
             href={props.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -156,7 +156,7 @@ const AchievementCard = (props) => {
         )}
         {props.project && (
           <a
-            className=" inline-flex items-center hover:text-teal-200"
+            className=" inline-flex items-center hover:text-cyan-200"
             href={props.project}
             target="_blank"
             rel="noopener noreferrer"

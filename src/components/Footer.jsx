@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { socialMedia, aboutMe } from "../constants";
-import { profilePic } from "../assets";
+import { socialMedia, aboutMe, contactInfo } from "../constants";
 import { kien } from "../assets";
 import { layout } from "../style";
 import { resumeLink, repoLink } from "../constants";
@@ -19,9 +18,15 @@ const Footer = () => (
         <p
           className={`font-poppins font-normal text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
         >
-        {/* {aboutMe.sdt} */}
         {aboutMe.tagLine}
         </p>
+
+        <div className="font-poppins font-normal text-dimWhite text-[15px] leading-[28px] mt-6">
+          <p>📍 Location: {contactInfo.location}</p>
+          <p>📧 Email: {contactInfo.email}</p>
+          <p>📞 Phone: {contactInfo.phone}</p>
+          <p>🎂 Date Of Birth: {contactInfo.dob}</p>
+        </div>
         <div className="flex flex-row mt-4">
           {socialMedia.map((social, index) => (
             <a
@@ -29,39 +34,36 @@ const Footer = () => (
               target="_blank"
               key={social.id}
               index={index}
-              className="text-white mr-5 text-[25px] hover:text-teal-200"
+              className="text-white mr-5 text-[25px] hover:text-cyan-200"
             >
               {React.createElement(social.icon)}
             </a>
           ))}
         </div>
 
-        <div className="grid grid-cols-2">
-          {/* styles is a prop */}
-          <a href={resumeLink} target="_blank">
-            <Button styles="mt-10 mr-3" text="Resume" icon="AiFillGithub" />
-          </a>
+        <div className="mt-8">
           <a href={repoLink} target="_blank">
             <Button
-              styles="mt-10 inline-flex items-center justify-center"
-              text="Star"
+              styles="inline-flex items-center justify-center"
+              text="Star on GitHub"
               icon={AiFillGithub}
             />
           </a>
         </div>
       </div>
 
-      <div className="md:ml-auto mt-10 md:mt-0">
+      <div className="flex-1 flex flex-col justify-end items-center md:items-end">
         <img
           src={kien}
           alt="Trung Kien"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
+          className="w-[200px] h-[200px] relative z-[5] rounded-full glow-border"
+          style={{ border: "2px solid rgba(0, 240, 255, 0.6)" }}
         />
       </div>
     </div>
     <div className="text-center font-poppins font-normal text-dimWhite text-xs sm:text-sm pb-4">
       <p>
-        Made with 💙 by Parth Mittal & the Open Source Community
+        Made with 💜 by <span style={{ color: "#00F0FF" }}>Trung Kien</span>
       </p>
     </div>
   </footer>

@@ -33,7 +33,7 @@ const BlogPost = (props) => {
                   <div
                     key={tag.id}
                     index={index}
-                    className="text-dimWhite mr-5 text-sm hover:text-teal-200 p-1.5 ring-1 ring-dimWhite hover:ring-teal-200 rounded text-ellipsis whitespace-nowrap overflow-hidden"
+                    className="text-dimWhite mr-5 text-sm hover:text-cyan-200 p-1.5 ring-1 ring-dimWhite hover:ring-cyan-200 rounded text-ellipsis whitespace-nowrap overflow-hidden"
                     title={tag.name}
                   >
                     <span className="cursor-default">{tag.name}</span>

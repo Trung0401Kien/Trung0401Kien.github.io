@@ -1,6 +1,6 @@
-import styles from "../style";
 import { motion } from "framer-motion";
 import { parthmittal } from "../assets";
+import styles from "../style";
 
 const Loading = ({isLoading}) => {
     return(
@@ -15,11 +15,9 @@ const Loading = ({isLoading}) => {
                 ease: "easeIn",
             }}
           >
-              <img
-                src={parthmittal}
-                alt="Parth Mittal"
-                className="w-[80px] h-[80px]"
-              />
+              <span className="font-poppins font-bold text-[36px] tracking-wider text-white">
+                <span className="text-[#00F0FF]">[</span> TRUNG KIEN <span className="text-[#00F0FF]">]</span>
+              </span>
           </motion.div>
         )
    

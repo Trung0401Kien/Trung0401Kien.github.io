@@ -19,7 +19,7 @@ const Contribution = (props) => {
         />
         <div className="flex flex-col ml-4">
           <a
-            className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px] hover:text-teal-200"
+            className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px] hover:text-cyan-200"
             href={props.link}
             target="_blank"
           >
@@ -104,13 +104,13 @@ const OpenSource = () => {
 
       <div className="container px-2 py-5 mx-auto mb-8">
         <div class="flex items-center justify-center">
-          <div class="flex items-center p-1 border border-blue-gradient dark:border-teal-400 rounded-xl">
+          <div class="flex items-center p-1 border border-blue-gradient dark:border-cyan-400 rounded-xl">
             {["PublicLab", "Zulip", "All"].map((item, index) => (
               <button
                 key={index}
                 onClick={() => handleContributionFilter(item)}
-                className={`px-2 py-2 text-sm font-medium text-white md:py-3 rounded-xl md:px-6 capitalize transition-colors duration-300 focus:outline-none hover:bg-teal-400 font-poppins ${
-                  activeFilter === item ? "bg-teal-400" : ""
+                className={`px-2 py-2 text-sm font-medium text-white md:py-3 rounded-xl md:px-6 capitalize transition-colors duration-300 focus:outline-none hover:bg-cyan-400 font-poppins ${
+                  activeFilter === item ? "bg-cyan-400" : ""
                 }`}
               >
                 {item}

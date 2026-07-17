@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { close, parthmittal, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -9,11 +9,9 @@ const Navbar = () => {
     <nav className="w-full  flex justify-between items-center navbar">
       {/* Logo */}
       <a href="#home">
-        <img
-          src={parthmittal}
-          alt="Parth Mittal"
-          className="w-[80px] h-[80px]"
-        />
+        <span className="font-poppins font-bold text-[24px] tracking-wider text-white">
+          <span className="text-[#00F0FF]">[</span> TRUNG KIEN <span className="text-[#00F0FF]">]</span>
+        </span>TRUNG KIEN
       </a>
 
       {/* List of links */}
@@ -26,7 +24,7 @@ const Navbar = () => {
             cursor-pointer
             text-[16px]
             ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
-            text-white hover:text-teal-200`}
+            text-white hover:text-cyan-200`}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

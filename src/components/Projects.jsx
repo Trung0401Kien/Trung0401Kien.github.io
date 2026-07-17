@@ -31,7 +31,7 @@ const Project = (props) => {
                 <div
                   key={tech.id}
                   index={index}
-                  className="text-dimWhite mr-5 text-[20px] hover:text-teal-200 tooltip"
+                  className="text-dimWhite mr-5 text-[20px] hover:text-cyan-200 tooltip"
                 >
                   {React.createElement(tech.icon)}
                   <span class="tooltiptext">{tech.name}</span>
@@ -51,7 +51,7 @@ const Project = (props) => {
           <a href={props.github} target="_blank">
             <AiFillGithub
               size="2rem"
-              className="text-white mr-1 hover:text-teal-200"
+              className="text-white mr-1 hover:text-cyan-200"
             ></AiFillGithub>
           </a>
         ) : (
@@ -61,7 +61,7 @@ const Project = (props) => {
           <a href={props.link} target="_blank">
             <BsLink45Deg
               size="2rem"
-              className="text-white hover:text-teal-200"
+              className="text-white hover:text-cyan-200"
             ></BsLink45Deg>
           </a>
         ) : (

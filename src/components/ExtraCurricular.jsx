@@ -13,7 +13,7 @@ const Content = ({ text, link }) => {
           <a href={link} target="_blank">
             <BsLink45Deg
               size="1rem"
-              className="inline hover:text-teal-200"
+              className="inline hover:text-cyan-200"
             ></BsLink45Deg>
           </a>
         ) : (
