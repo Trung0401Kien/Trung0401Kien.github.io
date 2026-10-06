@@ -6,7 +6,8 @@ import {
   Navbar,
   Hero,
   Education,
-  SkillsAndExperience,
+  Skills,
+  Experience,
   Footer,
   Projects,
   BlogPosts,
@@ -50,7 +51,8 @@ const App = () => {
 
         <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
           <div className={`${styles.boxWidth}`}>
-            <SkillsAndExperience />
+            <Skills />
+            <Experience />
             <Education />
           </div>
         </div>

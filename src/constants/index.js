@@ -50,7 +50,11 @@ export const callToAction = "https://github.com/Trung0401Kien";
 export const navLinks = [
   {
     id: "skills",
-    title: "Skills & Experience",
+    title: "Skills",
+  },
+  {
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "education",
@@ -98,6 +102,17 @@ export const achievements = [
     position: "Certification",
     content1: "Achieved B1 proficiency level in English according to the Common European Framework of Reference for Languages.",
     content2: "Date: 07/06/2024",
+    content3: "",
+    project: "",
+    youtube: "",
+  },
+  {
+    id: "a-2",
+    icon: Cer,
+    event: "Communication and Teamwork Skills (CEFR)",
+    position: "Certification",
+    content1: "Completed the Communication and Teamwork Skills program.",
+    content2: "Date: 06/2024",
     content3: "",
     project: "",
     youtube: "",
@@ -196,26 +211,22 @@ export const experiences = [
     positions: [
       {
         title: "Software Engineer (Full-Stack)",
-        duration: "11/2024 - Present",
+        duration: "11/2025 - Present",
         content: [
           {
-            text: "Independently perform requirement analysis to propose logical business flows and design robust database schemas for various healthcare modules.",
+            text: "Lead the end-to-end full-stack development (ReactJS, NestJS) and database design for enterprise-level applications, entirely replacing legacy UI/UX with modern architectures.",
             link: ""
           },
           {
-            text: "Demonstrate strong adaptability by expanding technical scope beyond .NET, contributing to full-stack feature development and front-end integration using Java, ReactJS, and NestJS.",
+            text: "Architect and optimize real-time, event-driven systems (WebSocket, Event Routing) to handle high concurrency and ensure data consistency across multiple environments.",
             link: ""
           },
           {
-            text: "Design and implement system architectures tailored to specific project needs. Focus heavily on high scalability, modularity, and long-term maintainability.",
+            text: "Leverage AI/LLM integration (Prompt Engineering, Tool Calling) and third-party cloud services (Cloudinary) to significantly boost system performance, document searchability, and operational efficiency.",
             link: ""
           },
           {
-            text: "Enhance data retrieval performance and system efficiency by authoring and managing complex Stored Procedures.",
-            link: ""
-          },
-          {
-            text: "Leverage AI tools (ChatGPT, Google Gemini) to read documentation, analyze databases, and reference solutions, boosting overall code quality and productivity by 50%.",
+            text: "Authored and managed complex Stored Procedures to offload heavy synchronization logic, ensuring absolute data integrity.",
             link: ""
           }
         ],
@@ -229,22 +240,22 @@ export const experiences = [
     positions: [
       {
         title: "Software Engineer (.NET)",
-        duration: "05/2024 - 03/2025",
+        duration: "08/2024 - 09/2025",
         content: [
           {
             text: "Successfully transitioned from an internship and probationary role by consistently delivering high-quality work, earning management trust to take ownership of critical project tasks.",
             link: ""
           },
           {
-            text: "Maintained and enhanced the OCBC point redemption application for OCBC Singapore Bank. Improved feature set and system reliability.",
+            text: "Maintained and enhanced the OCBC point redemption application for OCBC Singapore Bank.",
             link: ""
           },
           {
-            text: "Developed Discount Bites, a discount food ordering application, using Strapi and Node.js. Successfully delivered key functionalities outside core team expertise.",
+            text: "Developed Discount Bites, a discount food ordering application, using Strapi and Node.js.",
             link: ""
           },
           {
-            text: "Optimized and extended the Tangs e-commerce platform. Refactored event-handling logic and implemented new features to improve user experience and system performance.",
+            text: "Optimized and extended the Tangs e-commerce platform by refactoring event-handling logic and improving system performance.",
             link: ""
           }
         ],
@@ -456,6 +467,53 @@ export const openSourceContributions = [
 export const projects = [
   {
     id: "project-1",
+    title: "Smart Office",
+    github: "",
+    link: "",
+    image: logo_don,
+    content:
+      "An enterprise smart office suite with document workflows, real-time communications, and AI-driven capabilities. Built from scratch with digital signature engine, WebSocket notification system, and AI semantic search.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "ReactJS"
+      },
+      {
+        id: "icon-2",
+        icon: SiNestjs,
+        name: "NestJS"
+      },
+      {
+        id: "icon-3",
+        icon: DiMsqlServer,
+        name: "SQL Server"
+      }
+    ],
+  },
+  {
+    id: "project-2",
+    title: "Benh Vien Y Hoc Co Truyen",
+    github: "",
+    link: "",
+    image: logo_don,
+    content:
+      "Designed the database schema to ensure data integrity. Developed and optimized Stored Procedures for robust CRUD operations tailored to specific healthcare business requirements.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiNodedotjs,
+        name: "NodeJs"
+      },
+      {
+        id: "icon-2",
+        icon: DiMsqlServer,
+        name: "SQL Server"
+      }
+    ],
+  },
+  {
+    id: "project-3",
     title: "DiscountBites",
     github: "",
     link: "",
@@ -465,7 +523,7 @@ export const projects = [
     stack: [
       {
         id: "icon-1",
-        icon: SiJavascript,
+        icon: SiNodedotjs,
         name: "Node.js"
       },
       {
@@ -476,7 +534,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-2",
+    id: "project-4",
     title: "OCBC",
     github: "",
     link: "https://marketplace.stackreward.com",
@@ -496,13 +554,13 @@ export const projects = [
       },
       {
         id: "icon-3",
-        icon: SiCsharp,
+        icon: SiRedis,
         name: "Redis/SignalR"
       }
     ],
   },
   {
-    id: "project-3",
+    id: "project-5",
     title: "Tangs",
     github: "",
     link: "https://tangs.com",
